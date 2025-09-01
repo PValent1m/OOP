@@ -1,22 +1,24 @@
-function calcularMedia() {
-  var media, nota1, nota2;
-  var nome = document.getElementById("nome").value;
-  var matricula = document.getElementById("matricula").value
-  nota1 = Number(document.getElementById("n1").value);
-  nota2 = Number(document.getElementById("n2").value);
-  media = (nota1 + nota2) / 2;
-  let situacao = estado(media);
-  document.getElementById("resultado").innerHTML = "Nome: " + nome + "<br>Matricula: " + matricula + "<br>Media: " + media + "<br> Situação: " + situacao + "";
-
+class Aluno{
+  constructor(nome, nota1, nota2){
+    this.nome = nome;
+    this.nota1 = nota1;
+    this.nota2 = nota2;
+  }
+  CalcularMedia(){
+    let media = (this.nota1+this.nota2)/2;
+    return media;
+  }
+  exibir(){
+    let media = this.CalcularMedia();
+    let resultado = "Nome: "+ this.nome +"<br>Média: " + media;
+    document.getElementById("resultado").innerHTML = resultado;
+  }
 }
-function estado(media) {
-  if (media >= 6) {
-    return "Aprovado";
-  }
-  if (media >= 3 && media < 6) {
-    return "Recuperação";
-  }
-  if (media < 3) {
-    return "Reprovado";
-  }
+function Executar(){
+  let nome = document.getElementById("nome").value;
+  let nota1 = Number(document.getElementById("n1").value);
+  let nota2 = Number(document.getElementById("n2").value);
+  let aluno = new Aluno(nome, nota1, nota2);
+  aluno.CalcularMedia();
+  aluno.exibir();
 }

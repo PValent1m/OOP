@@ -39,7 +39,12 @@ button:hover {
   background-color: purple;
 }
 
-#resultado {
+#ResultadoMedia {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+#situacao {
   margin-top: 15px;
   font-weight: bold;
   color: green;

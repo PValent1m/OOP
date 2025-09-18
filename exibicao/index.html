@@ -9,15 +9,16 @@
 </head>
 
 <body>
-  <script src="Aluno.js"></script>
-  <script src="Executar.js"></script>
+  <script src="aluno_class.js"></script>
+  <script src="listas_aluno.js"></script>
+  <script src="exibir.js"></script>
   <div class="container">
     <b>Sistema Escola</b> <br>
     Nome <input id="nome" type="text"> <br>
     Matrícula <input id="matricula" type="text"> <br>
     Nota 1 <input id="n1" type="text"> <br>
     Nota 2 <input id="n2" type="text"> <br>
-    <button onclick="Executar()">Calcular</button> 
+    <button onclick="Executar(), ListarAlunos()">Calcular</button> 
     <div>
       <br>
       Resultado Final: <p id="ResultadoMedia"></p> <br>

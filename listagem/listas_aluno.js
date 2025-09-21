@@ -1,4 +1,4 @@
-var alunos = [], alunosAprov = [], alunosReprov= [], alunosRecuper = [], matriculas = [];
+var alunosAprov = [], alunosReprov= [], alunosRecuper = [], matriculas = [];
 function ListarAlunos(){
     let nome = document.getElementById("nome").value;
     alunos.push(nome);

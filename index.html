@@ -13,6 +13,9 @@
   <script src="listagem/listas_aluno.js"></script>
   <script src="exibicao/style.css"></script>
   <script src="exibicao/exibir.js"></script>
+  <script src="usuario/criacao_turma.js"></script>
+  <script src="cadastro/add_aluno.js"></script>
+  <script src="cadastro/add_turma.js"></script>
   <div class="container">
     <b>Sistema Escola</b> <br>
     Nome <input id="nome" type="text"> <br>
@@ -25,6 +28,13 @@
       Resultado Final: <p id="ResultadoMedia"></p> <br>
       Situação: <p id="situacao"></p> <br>
     </div>
+  </div>
+  <div class="container">
+    <h1>Criar turma</h1><br>
+    Adicionar alunos: <input id="alunos" type="text"><button onclick="AdicionarAluno()">Adicionar</button><br>
+    Professor: <input id="professor" type="text"><br>
+    Código: <input id="codigo" type="text"><br>
+    <button onclick="NovaTurma()">Cadastrar</button>
   </div>
 </body>
 </html>

@@ -21,7 +21,7 @@ class Aluno{
     }
     ExibirMedia(){
         let media = this.CalcularMedia();
-        let ResultadoMedia = "Aluno: " + this.nome +" || Média: " + media;
+        let ResultadoMedia = `Aluno: ${this.nome} || Média: ${media}`;
         document.getElementById("ResultadoMedia").innerHTML = ResultadoMedia;
     }
     ExibirSituacao(){

@@ -24,10 +24,10 @@ class Aluno{
         let ResultadoMedia = `Aluno: ${this.nome} || Média: ${media}`;
         document.getElementById("ResultadoMedia").innerHTML = ResultadoMedia;
     }
-    ExibirSituacao(){
+    ResultadoFinal(){
         let media = this.CalcularMedia();
-        let situacao = this.DefinirSituacao(media)
-        let ResultadoSituacao = situacao;
-        document.getElementById("situacao").innerHTML = ResultadoSituacao;
+        let situacao = this.DefinirSituacao(media);
+        let resultado_final = `| Aluno: ${this.nome} || Média: ${media} || Situação: ${situacao} |\n`
+        resultadofinal.push(resultado_final);
     }
 }

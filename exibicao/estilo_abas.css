@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    background-color: #db7cdb;
+}
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* --- ESTA É A REGRA MAIS IMPORTANTE PARA O ALINHAMENTO --- */
+[role="tablist"] {
+    display: flex; 
+    border-bottom: 2px solid #000000;
+}
+
+/* Estilo de cada botão de aba */
+[role="tab"] {
+    border: 2px solid transparent;
+    border-bottom: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4b4b4b;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s;
+}
+
+[role="tab"]:hover {
+    background-color: purple;
+}
+
+/* Estilo específico da aba ATIVA (selecionada) */
+[role="tab"][aria-selected="true"] {
+    background-color: #000000;
+    border-color: #000000;
+    border-bottom: 2px solid #000000;
+    margin-bottom: -2px;
+}
+
+/* Estilo dos painéis de conteúdo */
+[role="tabpanel"] {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+[role="tabpanel"][hidden] {
+    display: none;
+}
+
+/* Estilos para os formulários internos */
+input[type="text"] {
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    width: calc(100% - 20px);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

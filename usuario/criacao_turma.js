@@ -1,10 +1,13 @@
-
-class Turma{
-    constructor (codigo, professor){
+class Turma {
+    constructor (codigo, professor, alunosTurma){
         this.codigo = codigo;
         this.professor = professor;
+        this.alunosTurma = [...alunosTurma];
     }
     ExibirTurma(){
-        console.log(`professor: ${this.professor} || codigo: ${this.codigo}`);
+        return `professor: ${this.professor} || codigo: ${this.codigo}`;
+    }
+    ExibirAlunosTurma(){
+        return `Alunos: ${this.alunosTurma.join(", ")}`;
     }
 }

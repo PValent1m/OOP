@@ -1,17 +1,12 @@
-let alunos = [];
-function AdicionarAluno(){
-    let aluno = document.getElementById("alunos").value;
-    alunos.push(aluno);
-    console.log(alunos);
-}
+let alunos = [], turmas = [];
+
 function NovaTurma(){
     let codigo = Math.floor(10000 + Math.random() * 90000);
     let professor = document.getElementById("professor").value;
-    let turma = new Turma(codigo, professor);
+    let turma = new Turma(codigo, professor, alunos);
     turma.ExibirTurma();
-    for(let i=0;i<alunos.length;i++){
-        console.log(alunos[i]);
-    }
+    turma.ExibirAlunosTurma();
+    turmas.push(turma)
 }
 function ResetarAlunos(){
     alunos.length = 0;

@@ -5,9 +5,10 @@ class Turma {
         this.alunosTurma = [...alunosTurma];
     }
     ExibirTurma(){
-        return `professor: ${this.professor} || codigo: ${this.codigo}`;
+        console.log(`| Professor: ${this.professor} || Código: ${this.codigo} |`)
+        return `| Professor: ${this.professor} || Código: ${this.codigo} |`;
     }
     ExibirAlunosTurma(){
-        return `Alunos: ${this.alunosTurma.join(", ")}`;
+        return `Alunos: ${this.alunosTurma.join(", ")} `;
     }
 }

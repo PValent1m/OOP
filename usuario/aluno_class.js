@@ -28,6 +28,6 @@ class Aluno{
         let media = this.CalcularMedia();
         let situacao = this.DefinirSituacao(media);
         let resultado_final = `| Aluno: ${this.nome} || Média: ${media} || Situação: ${situacao} |\n`
-        resultadofinal.push(resultado_final);
+        console.log(resultadofinal.push(resultado_final));
     }
 }

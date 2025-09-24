@@ -7,6 +7,7 @@ function NovaTurma(){
     turma.ExibirTurma();
     turma.ExibirAlunosTurma();
     turmas.push(turma)
+    alert("Turma registrada com sucesso!")
 }
 function ResetarAlunos(){
     alunos.length = 0;

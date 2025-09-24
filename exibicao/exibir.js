@@ -5,5 +5,6 @@ function Executar(){
   let alunoclass = new Aluno(nome, nota1, nota2);
   alunoclass.CalcularMedia();
   alunoclass.ResultadoFinal();
+  alert("Aluno registrado com sucesso!")
   
 }

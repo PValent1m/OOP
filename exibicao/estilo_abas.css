@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: #db7cdb;
+    background-color: #d88fd8;
 }
 
 .container {
@@ -17,13 +17,13 @@ h1, h2 {
     color: #333;
 }
 
-/* --- ESTA É A REGRA MAIS IMPORTANTE PARA O ALINHAMENTO --- */
+
 [role="tablist"] {
     display: flex; 
     border-bottom: 2px solid #000000;
 }
 
-/* Estilo de cada botão de aba */
+/* estilo dos botões*/
 [role="tab"] {
     border: 2px solid transparent;
     border-bottom: none;
@@ -37,21 +37,21 @@ h1, h2 {
 }
 
 [role="tab"]:hover {
-    background-color: purple;
+    background-color: black;
 }
 
-/* Estilo específico da aba ATIVA (selecionada) */
+/* estilo dos botões ativos*/
 [role="tab"][aria-selected="true"] {
-    background-color: #000000;
+    background-color: #14810acc;
     border-color: #000000;
     border-bottom: 2px solid #000000;
     margin-bottom: -2px;
 }
 
-/* Estilo dos painéis de conteúdo */
+
 [role="tabpanel"] {
     padding: 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #000000;
     border-top: none;
     border-radius: 0 0 5px 5px;
 }
@@ -60,7 +60,7 @@ h1, h2 {
     display: none;
 }
 
-/* Estilos para os formulários internos */
+
 input[type="text"] {
     padding: 8px;
     margin: 5px 0 10px 0;
@@ -79,4 +79,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#outputdados {
+    font-size: 20px ;
+    color: #000000;
+    line-height: 1.5;
 }
